@@ -82,5 +82,135 @@ h6 {
 }
 
 body {
-  background-color: #fffb00;
+  background-color: aqua;
+  padding: 30px;
+}
+
+section {
+  margin: 30px;
+}
+
+.numeral {
+  background-color: azure;
+  border-bottom: 6px solid #929292;
+  margin-bottom: 20px;
+}
+
+.numeral li {
+  padding: 20px;
+  display: inline-block;
+  color: #ca0303;
+  font-size: 25px;
+}
+
+.numeral li:nth-child(1):before {
+  content: ' ';
+  padding: 10px;
+}
+
+.numeral li:nth-child(4)::after {
+  content: ' > ';
+  padding: 10px;
+}
+
+.numeral li:hover {
+  color: #fff;
+  background-color: #5e5373;
+  -webkit-box-shadow: 0 5px 0px #3c354a;
+          box-shadow: 0 5px 0px #3c354a;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.text-numeral p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.button {
+  background-color: green;
+  padding: 10px;
+  width: 500px;
+  border-radius: 6%;
+  -webkit-box-shadow: 0 5px 0px #bcbbbd;
+          box-shadow: 0 5px 0px #bcbbbd;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.button .text-button {
+  padding: 10px;
+}
+
+.button .text-button p {
+  font-family: Arial;
+  font-size: 20px;
+  color: #fff;
+}
+
+.button:hover {
+  margin: 0 10px;
+  padding: 0 20px;
+  background-color: #18b5a4;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+
+.numerel-list {
+  font-family: fantasy;
+  font-size: 15px;
+}
+
+.numerel-list li {
+  display: inline-block;
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20%;
+  -webkit-box-shadow: 5px 5px 10px #3c354a;
+          box-shadow: 5px 5px 10px #3c354a;
+  border: 1px solid #5e5373;
+}
+
+.numerel-list li:hover {
+  background-color: #dfd0fc;
+}
+
+.numerel-list li:active {
+  background-color: aquamarine;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5ms ease;
+  transition: all 0.5ms ease;
+}
+
+.numeral-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.numeral-table table {
+  border-collapse: collapse;
+}
+
+.numeral-table table td {
+  border: 1px solid #3c354a;
+  padding: 10px;
+}
+
+.numeral-table table td:hover {
+  background-color: #dfd0fc;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5ms ease;
+  transition: all 0.5ms ease;
 }

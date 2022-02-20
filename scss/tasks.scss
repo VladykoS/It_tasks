@@ -1,5 +1,126 @@
 @import "nullstyle.scss";
 
 body{
-   background-color: rgb(255, 251, 0);
+   background-color: aqua;
+   padding: 30px;
 }
+section{
+   margin: 30px;
+}
+
+// numeral
+.numeral{
+   background-color: azure;
+   border-bottom: 6px solid rgb(146, 146, 146);
+   margin-bottom: 20px;
+   
+   
+   
+   li{
+      padding: 20px;
+      display: inline-block;
+      color: rgb(202, 3, 3);
+      font-size: 25px;
+      &:nth-child(1):before{
+         content: ' ';
+         padding: 10px;
+      }
+      &:nth-child(4)::after{
+         content: ' > ';
+         padding: 10px;
+      }
+      &:hover{
+      
+      color: #fff;
+      background-color: #5e5373;
+      box-shadow: 0 5px 0px #3c354a;
+      transition: 1s;
+   }
+   }
+}
+.text-numeral {
+   p{
+   font-weight: bold;
+   font-size: 25px;
+}
+}
+
+
+
+// buttom green
+.button {
+   
+   background-color: green;
+   padding: 10px;
+   width: 500px;
+   border-radius: 6%;
+   box-shadow: 0 5px 0px #bcbbbd;
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-delay: 0.5s;
+   transition-timing-function: linear;
+   .text-button {
+      padding: 10px;
+         p{
+         font-family: Arial;
+         font-size: 20px;
+         color: #fff;
+         }
+   }
+   &:hover{
+      margin: 0 10px;
+      padding: 0 20px;
+      background-color: #18b5a4;
+      transition: all 0.5s linear 0s;
+   }
+   
+}
+
+// numerel-list
+.numerel-list {
+   
+   font-family: fantasy;
+   font-size: 15px;
+   li{
+      display: inline-block;
+      background-color: aliceblue;
+      margin: 10px;
+      padding: 10px; 
+      border-radius: 20%;
+      box-shadow: 5px 5px 10px #3c354a;
+      border:1px solid #5e5373;
+      &:hover{
+         background-color: #dfd0fc;
+      }
+      &:active{
+         background-color: aquamarine;
+         transform: rotate(180deg);
+         transition: all 0.5ms ease;
+      }
+   }
+}
+
+
+// таблиця
+.numeral-table{
+   display: flex;
+      table{
+         
+         border-collapse: collapse;
+            td{
+            border: 1px solid #3c354a;
+            padding: 10px;
+            &:hover{
+               background-color: #dfd0fc;
+               width: 15px;
+               height: 15px;
+               transform: rotate(180deg);
+               transition: all 0.5ms ease;
+         }
+      }
+   }
+   
+}
+
+
+
